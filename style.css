@@ -2,9 +2,11 @@
     padding: 0;
     margin: 0;
 }
-body{
+
+body {
     background-color: #fefae0;
 }
+
 h1 {
     background-color: #283618;
     color: white;
@@ -86,51 +88,6 @@ img {
 
 }
 
-@media (max-width: 370px) {
-    .choice {
-        height: 90px;
-        width: 90px;
-    }
-
-    .choice img {
-        height: 75px;
-        width: 75px;
-    }
-
-    .container-choicess {
-        gap: 1rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
-    .choice:hover {
-        background-color: slategray;
-        cursor: pointer;
-
-    }
-    .score-bord {
-     
-        margin-top: 2.5rem;
-        font-size: 2rem;
-       
-    }
-    #user,
-    #computer{
-        font-size: 2rem;
-    }
-    .msg-container {
-        
-        margin-top: 3rem;
-    }
-    .msg-container p {
-        font-size: 1rem;
-        padding: 0.5rem;
-        color: black;
-    }
-
-}
-
 .score-bord {
     display: flex;
     justify-content: center;
@@ -139,10 +96,12 @@ img {
     font-size: 2.5rem;
     gap: 5rem;
 }
+
 #user,
 #computer {
     font-size: 5rem;
 }
+
 .msg-container {
     display: flex;
     justify-content: center;
@@ -161,3 +120,65 @@ img {
     display: inline;
 }
 
+@media (max-width: 370px) {
+    h1 {
+        background-color: #283618;
+        color: white;
+        text-align: center;
+        height: 5rem;
+        line-height: 6rem;
+        font-size: 1.5rem;
+        flex-wrap: wrap;
+
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .choice {
+        height: 100px;
+        width: 100px;
+    }
+
+    .choice img {
+        height: 85px;
+        width: 85px;
+    }
+
+    .container-choicess {
+        gap: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .choice:hover {
+        background-color: slategray;
+        cursor: pointer;
+
+    }
+
+    .score-bord {
+
+        margin-top: 5rem;
+        font-size: 2rem;
+        gap: 1.9rem;
+
+    }
+
+    #user,
+    #computer {
+        font-size: 2rem;
+    }
+
+    .msg-container {
+
+        margin-top: 6rem;
+    }
+
+    .msg-container p {
+        font-size: 1.5rem;
+        padding: .6rem;
+        color: white;
+    }
+
+}
