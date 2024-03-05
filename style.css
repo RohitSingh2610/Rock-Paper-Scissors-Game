@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    background-color: rgba(76, 116, 75, 1);
+    color: white;
+    text-align: center;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container-choicess {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    margin-top: 3rem;
+
+}
+
+
+
+.choice:hover {
+    background-color: slategray;
+    cursor: pointer;
+
+}
+
+.choice {
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    /* Make the image circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    /* Make the image circular */
+    cursor: pointer;
+}
+
+@media (max-width: 527px) {
+    h1 {
+        flex-wrap: wrap;
+        display: flexbox;
+        font-size: 2rem;
+        flex-direction: column;
+    }
+
+    .choice {
+        height: 120px;
+        width: 120px;
+    }
+
+    .choice img {
+        height: 105px;
+        width: 105px;
+    }
+
+    .container-choicess {
+        gap: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .choice:hover {
+        background-color: slategray;
+        cursor: pointer;
+
+    }
+
+
+}
+
+@media (max-width: 370px) {
+    .choice {
+        height: 90px;
+        width: 90px;
+    }
+
+    .choice img {
+        height: 75px;
+        width: 75px;
+    }
+
+    .container-choicess {
+        gap: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .choice:hover {
+        background-color: slategray;
+        cursor: pointer;
+
+    }
+    .score-bord {
+     
+        margin-top: 2.5rem;
+        font-size: 2rem;
+       
+    }
+    #user,
+    #computer{
+        font-size: 2rem;
+    }
+    .msg-container {
+        
+        margin-top: 3rem;
+    }
+    .msg-container p {
+        font-size: 1rem;
+        padding: 0.5rem;
+        color: black;
+    }
+
+}
+
+.score-bord {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+    font-size: 2.5rem;
+    gap: 5rem;
+}
+#user,
+#computer {
+    font-size: 5rem;
+}
+.msg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.msg-container p {
+    font-size: 2.5rem;
+    background-color: rgb(17, 2, 25);
+    /* border: 1px solid black; */
+    border-radius: 2.5rem;
+    line-height: 3rem;
+    color: white;
+    padding: 1rem;
+    display: inline;
+}
+
